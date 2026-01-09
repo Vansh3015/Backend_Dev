@@ -21,7 +21,7 @@ checkOrder(1)
 
 // Task 2
 const users = [
-    {name:"Krishna","type":"premium"},
+    {name:"Vansh","type":"premium"},
         {name:"Shivam","type":"basic"}
 ]
     
@@ -50,7 +50,7 @@ const complete = (username)=>{
         .catch((err)=>console.error(err));
 }
 
-complete("Krishna");
+complete("Vansh");
 
 // Task 3
 
