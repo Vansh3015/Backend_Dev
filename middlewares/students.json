@@ -1,0 +1,40 @@
+{
+  "students": [
+    {
+      "id": 101,
+      "name": "Aarav Sharma",
+      "age": 20,
+      "gender": "Male",
+      "course": "B.Tech",
+      "branch": "Computer Science",
+      "year": 2,
+      "cgpa": 8.1,
+      "skills": ["Python", "C++", "SQL"],
+      "email": "aarav.sharma@example.com",
+      "phone": "9876543210",
+      "address": {
+        "city": "Delhi",
+        "state": "Delhi",
+        "country": "India"
+      }
+    },
+    {
+      "id": 102,
+      "name": "Priya Verma",
+      "age": 19,
+      "gender": "Female",
+      "course": "B.Tech",
+      "branch": "Information Technology",
+      "year": 1,
+      "cgpa": 8.5,
+      "skills": ["Java", "HTML", "CSS"],
+      "email": "priya.verma@example.com",
+      "phone": "9123456780",
+      "address": {
+        "city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "country": "India"
+      }
+    }
+  ]
+}
