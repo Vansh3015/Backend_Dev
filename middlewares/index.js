@@ -17,10 +17,20 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use(authMiddleware);
+
 app.use((req, res, next) => {
     console.log(`I am middleware 2`);
     next();
 });
+
+const authMiddleware = (req, res, next) => {
+    const authHeader = req.headers['authorization'];
+    if (!authHeader || authHeader !== 'Bearer mysecrettoken') {
+        return res.status(401).json({ message: 'Unauthorized' });
+    }   
+    next();
+};
 
 const readStudentsFromFile = async () => {
     const data = await fs.readFile("./students.json", "utf-8");
